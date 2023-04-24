@@ -1,0 +1,196 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:
+        radial-gradient(circle farthest-side at 0% 50%, #fb1 23.5%, rgba(240, 166, 17, 0) 0)21px 30px,
+        radial-gradient(circle farthest-side at 0% 50%, #B71 24%, rgba(240, 166, 17, 0) 0)19px 30px,
+        linear-gradient(#fb1 14%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 85%, #fb1 0)0 0,
+        linear-gradient(150deg, #fb1 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, #fb1 0)0 0,
+        linear-gradient(30deg, #fb1 24%, #B71 0, #B71 26%, rgba(240, 166, 17, 0) 0, rgba(240, 166, 17, 0) 74%, #B71 0, #B71 76%, #fb1 0)0 0,
+        linear-gradient(90deg, #B71 2%, #fb1 0, #fb1 98%, #B71 0%)0 0 #fb1;
+    background-size: 40px 60px;
+}
+
+
+
+/* navbar */
+
+
+
+div.navbar {
+    width: 65%;
+    height: 120px;
+    background-color: #fef7e2;
+    display: flex;
+    align-items: center;
+    border-radius: 70px;
+    margin: 40px;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    padding: 0px 20px;
+    gap: 10px;
+}
+
+ul li {
+    background-color: #ffdf7e;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-weight: light;
+    font-size: 1.1em;
+    flex-grow: 1;
+    text-align: center;
+}
+
+ul li:hover {
+    padding: 25px 45px;
+    border-radius: 100px;
+    font-weight: bolder;
+    font-size: 1.2em;
+    background-color: rgb(252, 142, 15);
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+ul li img {
+    width: 25px;
+    height: auto;
+}
+
+ul li.logo:hover img {
+    width: 40px;
+    height: auto;
+}
+
+li.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 40px;
+}
+
+/* fine navbar */
+
+/* product-card */
+
+div.container-card {
+    width: 300px;
+    height: 380px;
+    border-radius: 90px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fef7e2;
+}
+
+div.image {
+    width: 100%;
+    height: 70%;
+    position: relative;
+}
+
+/* immagine centrata  */
+
+div.image img {
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* testo sotto la card */
+
+div.honey-paragraph {
+    gap: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    align-items: center;
+}
+
+div.honey-paragraph>div p {
+    font-size: 0.9em;
+    padding-top: 5px;
+}
+
+div.honey-paragraph>p {
+    font-size: 1.2em;
+}
+
+div.container-card button {
+    margin-bottom: 15px;
+    border: 0px;
+    border-radius: 20px;
+    padding: 10px 40px;
+    background-color: #ffdf7e;
+}
+
+div.container-card button:hover {
+    background-color: #eec64f;
+    transition: 0.2s;
+    box-shadow: 0px 3px 10px rgb(0, 0, 0, 0.4);
+    cursor: pointer;
+}
+
+div.container-card button:active {
+    box-shadow: none;
+}
+
+/* fine card-product */
+
+div.articolo {
+    min-width: 440px;
+    max-width: 900px;
+    min-height: 300px;
+    margin-top: 20px;
+    border-radius: 10px;
+    display: flex;
+    background-color: #fef7e2;
+    flex-wrap: wrap-reverse;
+    padding: 20px;
+    align-items: flex-end;
+}
+
+div.articolo>div {
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 400px;
+    object-fit: contain;
+}
+
+div.articolo>div img {
+    width: 100%;
+    height: auto;
+
+}
+
+
+div.articolo div.text {
+    flex-grow: 1;
+    flex-shrink: 0;
+    padding: 20px 0px 20px 20px;
+}
+
+div.articolo div.text h3 {
+    margin-bottom: 10px;
+}
+
+div.articolo div.text {
+    line-height: 20px;
+}
