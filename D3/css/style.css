@@ -1,0 +1,19 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.scomparsa {
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+}
+
+.scomparsa:hover {
+    opacity: 1;
+    transition: 0.8s;
+}
