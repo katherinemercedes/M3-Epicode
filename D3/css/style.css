@@ -4,9 +4,22 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #000000e4;
+
+}
+
+.custom-opacity {
+    background-color: rgba(255, 255, 255, 0.88) !important;
+}
+
+.new-margin {
+    margin-top: 150px !important;
+    margin-bottom: 120px !important
+}
 
 .scomparsa {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(255, 255, 255, 0.656);
     opacity: 0;
     overflow: hidden;
 }
@@ -71,14 +84,17 @@ ul li i.fa-brands {
 
 ul li i.fa-brands:hover {
     font-size: 2em;
+    transition: 0.2s;
 }
 
 .fa-music:hover {
     font-size: 2em;
+    transition: 0.2s;
 }
 
 .fa-cart-shopping:hover {
     font-size: 2em;
+    transition: 0.2s;
 }
 
 /* effetto active su icone */
